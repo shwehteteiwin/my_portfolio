@@ -2,61 +2,188 @@
    NAVBAR
 =========================== */
 
-nav{
-    width:fit-content;
-    margin:auto;
-    display:flex;
-    align-items:center;
-    gap:30px;
-    padding:12px 25px;
-    background:var(--card);
-    border-radius:40px;
-    box-shadow:0 5px 20px rgba(0,0,0,0.08);
-        position: sticky;
-    top: 0;
-    z-index: 1000;
+nav {
+  width: fit-content;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+
+  padding: 12px 25px;
+
+  background: var(--card);
+
+  border-radius: 40px;
+
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+
+  position: sticky;
+  top: 10px;
+  z-index: 1000;
 }
 
-.logo{
-    font-size:22px;
-    font-weight:700;
-    color:var(--text);
+.logo {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--text);
 }
 
-nav ul{
-    display:flex;
-    gap:20px;
-    list-style:none;
+.nav-links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
 }
 
-nav ul li a{
-    text-decoration:none;
-    color:var(--text);
-    opacity:0.7;
-    font-size:14px;
-    transition:0.3s;
+.nav-links li {
+  list-style: none;
 }
 
-nav ul li a:hover{
-    opacity:1;
-    color:var(--primary);
+.nav-links li a {
+  text-decoration: none;
+  color: var(--text);
+  opacity: 0.7;
+  font-size: 14px;
+  transition: 0.3s;
 }
 
-nav ul li a.active{
-    color:var(--primary);
-    font-weight:600;
+.nav-links li a:hover {
+  opacity: 1;
+  color: var(--primary);
 }
 
-.hire-btn{
-    border:none;
-    padding:10px 25px;
-    background:var(--primary);
-    color:white;
-    border-radius:25px;
-    cursor:pointer;
-    transition:0.3s;
+.nav-links li a.active {
+  color: var(--primary);
+  font-weight: 600;
 }
 
-.hire-btn:hover{
-    transform:translateY(-2px);
+.hire-btn {
+  border: none;
+  padding: 10px 25px;
+  background: var(--primary);
+  color: white;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.hire-btn:hover {
+  transform: translateY(-2px);
+}
+
+/* ===========================
+   HAMBURGER
+=========================== */
+
+.menu-toggle {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--text);
+}
+
+/* ===========================
+   TABLET
+=========================== */
+
+@media (max-width: 768px) {
+
+
+  nav {
+    width: 95%;
+    justify-content: space-between;
+    gap: 0;
+    padding: 15px 20px;
+    border-radius: 20px;
+
+    position: sticky;
+    top: 10px;
+    z-index: 9999;
+  }
+
+
+  .logo {
+    font-size: 20px;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+
+    position: absolute;
+    top: 75px;
+    left: 0;
+
+    width: 100%;
+
+    flex-direction: column;
+
+    background: var(--card);
+
+    border-radius: 20px;
+
+    padding: 15px 0;
+
+    gap: 0;
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links li {
+    width: 100%;
+  }
+
+  .nav-links li a {
+    display: block;
+    text-align: center;
+    padding: 14px;
+    font-size: 15px;
+  }
+
+  .hire-btn {
+    display: none;
+  }
+}
+
+/* ===========================
+   MOBILE
+=========================== */
+
+@media (max-width: 480px) {
+
+  nav {
+    width: calc(100% - 20px);
+    margin: 10px auto;
+    padding: 12px 18px;
+  }
+
+  .logo {
+    font-size: 18px;
+  }
+
+  .menu-toggle {
+    font-size: 1.3rem;
+  }
+
+  .nav-links {
+    top: 65px;
+  }
+
+  .nav-links li a {
+    font-size: 14px;
+    padding: 12px;
+  }
+}
+.nav-links {
+  z-index: 10000;
+}
+
+nav {
+  z-index: 10000;
 }
