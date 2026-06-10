@@ -198,7 +198,9 @@
     font-size: 0.95rem;
     line-height: 1.7;
   }
-
+.fact-card p {
+    text-align: center;
+  }
   .info-box,
   .fact-card {
     padding: 20px;
@@ -236,12 +238,14 @@
     font-size: 1.15rem;
   }
 
-  .about-content p,
-  .about-card p {
+  .about-content p{
     font-size: 0.9rem;
     text-align:justify;
   }
 
+  .fact-card p {
+    text-align: center;
+  }
   .info-box,
   .fact-card{
     padding: 15px;
