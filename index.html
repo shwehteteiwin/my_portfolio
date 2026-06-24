@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Shwe Htet Ei Win</title>
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💻</text></svg>">
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💻</text></svg>"
+    />
     <!-- <link rel="stylesheet" href="Introduction.css"> -->
     <link rel="stylesheet" href="css/index.css" />
     <link rel="stylesheet" href="css/nav.css" />
@@ -432,7 +435,11 @@
             <li>Participated in testing and performance improvements.</li>
           </ul>
 
-          <div class="project-gallery">
+          <div class="project-gallery roms-gallery">
+            <img src="images/Er.png" alt="" />
+            <img src="images/domainModel.jpg" alt="" />
+            <img src="images/useCase.png" alt="" />
+
             <img src="images/ROMS5.jpg" alt="" />
             <img src="images/ROMS6.jpg" alt="" />
             <img src="images/ROMS7.jpg" alt="" />
@@ -504,7 +511,7 @@
             <!-- <li>Improved user experience through organized workflows.</li> -->
           </ul>
 
-          <div class="project-gallery">
+          <div class="project-gallery roms-gallery">
             <img src="images/SSdashboard.png" alt="" />
             <img src="images/SSevent.png" alt="" />
             <img src="images/SSNodes.png" alt="" />
@@ -637,8 +644,15 @@
       </footer>
     </div>
 
+    <!-- ROMS Image Modal -->
+    <div id="romsModal" class="image-modal">
+      <span class="close-modal">&times;</span>
+      <img id="modalImage" class="modal-content" />
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script src="js/contact.js"></script>
     <script src="js/nav.js"></script>
+    <script src="js/projectPhotoCard.js"></script>
   </body>
 </html>

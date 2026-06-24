@@ -181,9 +181,9 @@ nav {
   }
 }
 .nav-links {
-  z-index: 10000;
+  z-index: 1000;
 }
 
 nav {
-  z-index: 10000;
+  z-index: 1001;
 }
